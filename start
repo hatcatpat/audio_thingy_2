@@ -1,0 +1,11 @@
+#!/bin/bash
+
+make clean
+
+cmd='make'
+
+if [[ $1 == 'jack' ]]; then 
+  cmd='make jack'
+fi
+
+${cmd} && ./ca
